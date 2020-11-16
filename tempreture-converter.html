@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+<title>Assignment 3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body style="background-color: Lavender";>
+</head>
+<p>
+<h3 style="text-align:center;">Convert Temperature
+between Celsius and Fahrenheit</h3>
+
+
+<div class="container" ng-app = "" ng-init=" valueC='0.0'; valueF='0.0' ">
+<h6>Enter Celsius & Fahrenheit values:</h6>
+
+<p>
+<p> °C: <input type="text" ng-model="valueC" placeholder=" Celsius degree"></p>
+<p><b>°C to °F: </b> {{valueC / 5 * 9 +32}}{{'°F'}}</p>
+
+<p> °F: <input type="text" ng-model="valueF" placeholder=" Fahrenheit degree"></p>
+<p> <b>°F to °C: </b> {{(valueF - 32) * 5 /9}}{{'°C'}} </p>
+</div>
+<div class="container">
+    <h5 style="text-align:center;"> Typical Temperatures </h5>
+       <table class="table table-striped">   
+      <thead>
+        <tr>
+          <th> Description </th>
+          <th> °C </th>
+          <th> °F </th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+        <td> Water boils </td>
+        <td> 100 </td>
+        <td> 212 </td>
+        </tr>
+
+        <tr>
+        <td> Body temperature </td>
+        <td> 37 </td>
+        <td> 98.6 </td>
+        </tr>
+
+        <tr>
+        <td> Room temperature </td>
+        <td> 24 </td>
+        <td> 75.2 </td>
+        </tr>
+
+        <tr>
+        <td> Cool Day </td>
+        <td> 23 </td>
+        <td> 73.4 </td>
+        </tr>
+
+        <tr>
+        <td> Freezing point of water </td>
+        <td> Zero </td>
+        <td> 32 </td>
+        </tr>
+
+        <tr>
+        <td> Very Cold Day </td>
+        <td> -20 </td>
+        <td> -4 </td>
+        </tr>
+        </table>
+
+   <h5 style="color:darkred"> Important notes </h5>
+        <p><strong> From °C to °F: </strong> Divide by 5, then multiply by 9, then add 32 
+        <p> (°C / 5) * 9 +32 </p>
+
+        <p><strong> From °F to °C:</strong> Subtract 32, then multiply by 5, then divide by 9 
+        <p> (°F - 32) * 5 /9 </p> <br>
+
+        <p style="text-align:left;"> <strong style="color:darkred"> Done by: </strong> Hajer Rashed </p>
+        <p style="text-align:left;"> <strong style="color:darkred"> ID: </strong> 1077537 </p>
+        <p style="text-align:left;"> <strong style="color:darkred"> Submitted to: </strong> Dr. Murad Al-Rajab </p>
+       
+  </div>
+</body>
+</html>
